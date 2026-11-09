@@ -1,0 +1,243 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eef0fa;
+    color: #252943;
+    min-height: 100vh;
+    padding: 35px 15px;
+}
+
+.container {
+    max-width: 1050px;
+    margin: auto;
+}
+
+.form-wrapper {
+    display: grid;
+    grid-template-columns: 38% 62%;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(30, 35, 80, 0.12);
+}
+
+/* PANEL KIRI */
+
+.side-panel {
+    background: linear-gradient(145deg, #20245f, #5544a8);
+    color: white;
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #f5bd57;
+}
+
+.side-content {
+    margin: 80px 0;
+}
+
+.subtitle {
+    color: #f5bd57;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.side-content h1 {
+    font-size: 34px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.side-content p {
+    color: #deddf5;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.side-footer {
+    font-size: 12px;
+    color: #d0cbed;
+}
+
+/* PANEL FORM */
+
+.form-panel {
+    padding: 40px;
+}
+
+.form-header {
+    margin-bottom: 30px;
+}
+
+.form-header h2 {
+    font-size: 28px;
+    color: #292d68;
+    margin-bottom: 9px;
+}
+
+.form-header p {
+    color: #85889b;
+    font-size: 14px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group > label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 9px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #dfe1eb;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    font-family: inherit;
+    color: #292d45;
+    background: #fafaff;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #6554bd;
+    box-shadow: 0 0 0 3px rgba(101, 84, 189, 0.1);
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* PILIHAN TIKET */
+
+.ticket-options {
+    display: flex;
+    gap: 15px;
+}
+
+.ticket-options label {
+    flex: 1;
+    padding: 13px;
+    border: 1px solid #dfe1eb;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    background: #fafaff;
+}
+
+.ticket-options input {
+    accent-color: #6554bd;
+    margin-right: 7px;
+}
+
+/* PERSETUJUAN */
+
+.agreement {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 20px 0;
+    font-size: 13px;
+    color: #65687c;
+    line-height: 1.5;
+}
+
+.agreement input {
+    margin-top: 3px;
+    accent-color: #6554bd;
+}
+
+/* TOMBOL */
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #5144a5, #7562ce);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #39317e;
+    transform: translateY(-2px);
+}
+
+.form-note {
+    text-align: center;
+    color: #999bad;
+    font-size: 12px;
+    margin-top: 18px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 750px) {
+    .form-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .side-panel {
+        min-height: 260px;
+        padding: 30px;
+    }
+
+    .side-content {
+        margin: 40px 0;
+    }
+
+    .side-content h1 {
+        font-size: 27px;
+    }
+
+    .form-panel {
+        padding: 30px 22px;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        padding: 12px 8px;
+    }
+
+    .form-panel {
+        padding: 25px 16px;
+    }
+
+    .ticket-options {
+        flex-direction: column;
+    }
+}

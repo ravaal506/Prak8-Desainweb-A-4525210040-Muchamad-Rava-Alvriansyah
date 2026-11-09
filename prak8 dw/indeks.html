@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi Event Teknologi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-wrapper">
+
+            <div class="side-panel">
+                <div class="logo">TECH<span>FEST</span></div>
+
+                <div class="side-content">
+                    <p class="subtitle">JOIN OUR EVENT</p>
+                    <h1>Explore Your Future With Technology</h1>
+                    <p>
+                        Bergabunglah bersama kami dalam acara seminar
+                        teknologi untuk menambah wawasan dan pengalaman.
+                    </p>
+                </div>
+
+                <div class="side-footer">
+                    <p>© 2026 TechFest Event</p>
+                </div>
+            </div>
+
+            <div class="form-panel">
+                <div class="form-header">
+                    <h2>Form Registrasi</h2>
+                    <p>Silakan lengkapi data diri Anda di bawah ini.</p>
+                </div>
+
+                <form action="#" method="post">
+
+                    <div class="input-group">
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" id="nama" name="nama"
+                            placeholder="Masukkan nama lengkap" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Alamat Email</label>
+                        <input type="email" id="email" name="email"
+                            placeholder="contoh@email.com" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="hp">Nomor Handphone</label>
+                        <input type="tel" id="hp" name="hp"
+                            placeholder="08xxxxxxxxxx"
+                            pattern="[0-9]{10,13}" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="institusi">Asal Institusi</label>
+                        <input type="text" id="institusi" name="institusi"
+                            placeholder="Nama kampus atau sekolah" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="kategori">Kategori Peserta</label>
+                        <select id="kategori" name="kategori" required>
+                            <option value="">Pilih kategori</option>
+                            <option value="Mahasiswa">Mahasiswa</option>
+                            <option value="Pelajar">Pelajar</option>
+                            <option value="Umum">Umum</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Jenis Tiket</label>
+                        <div class="ticket-options">
+                            <label>
+                                <input type="radio" name="tiket"
+                                    value="Reguler" required>
+                                Reguler
+                            </label>
+
+                            <label>
+                                <input type="radio" name="tiket"
+                                    value="VIP">
+                                VIP
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="alasan">Alasan Mengikuti Event</label>
+                        <textarea id="alasan" name="alasan"
+                            rows="4"
+                            placeholder="Ceritakan alasan Anda mengikuti event..."
+                            minlength="15" required></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="tanggal">Tanggal Pendaftaran</label>
+                        <input type="date" id="tanggal" name="tanggal" required>
+                    </div>
+
+                    <div class="agreement">
+                        <input type="checkbox" id="setuju"
+                            name="setuju" required>
+                        <label for="setuju">
+                            Saya menyetujui seluruh ketentuan pendaftaran.
+                        </label>
+                    </div>
+
+                    <button type="submit">Daftar Sekarang →</button>
+
+                    <p class="form-note">
+                        Pastikan semua data yang Anda masukkan sudah benar.
+                    </p>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
